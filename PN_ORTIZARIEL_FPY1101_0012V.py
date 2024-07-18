@@ -4,7 +4,7 @@ import math
 
 # Lista de empleados con nombre
 trabajadores = [
-    {"nombre": "Juan Perez",},
+    {"nombre": "Juan Perez"},
     {"nombre": "Maria Garcia"},
     {"nombre": "Carlos Lopez"},
     {"nombre": "Ana Martinez"},
@@ -32,17 +32,20 @@ def clasificar_sueldos():
     print("Sueldos menores a $800.000 TOTAL:", len(sueldos_menores))
     for i in range(len(trabajadores)):
         if sueldos[i] < 800000:
-            print(f"Nombre empleado: {trabajadores[i]['nombre']} Sueldo: ${sueldos[i]}")
+            print(f"Nombre empleado: Sueldo: ")
+            print(f"{trabajadores[i]['nombre']}  ${sueldos[i]}")
 
     print("\nSueldos entre $800.000 y $2.000.000 TOTAL:", len(sueldos_medios))
     for i in range(len(trabajadores)):
         if 800000 <= sueldos[i] <= 2000000:
-            print(f"Nombre empleado: {trabajadores[i]['nombre']} Sueldo: ${sueldos[i]}")
+            print(f"Nombre empleado: Sueldo: ")
+            print(f"{trabajadores[i]['nombre']}  ${sueldos[i]}")
 
     print("\nSueldos superiores a $2.000.000 TOTAL:", len(sueldos_mayores))
     for i in range(len(trabajadores)):
         if sueldos[i] > 2000000:
-            print(f"Nombre empleado: {trabajadores[i]['nombre']} Sueldo: ${sueldos[i]}")
+            print(f"Nombre empleado: Sueldo: ")
+            print(f"{trabajadores[i]['nombre']}  ${sueldos[i]}")
 
     print("\nTOTAL SUELDOS: $",sum(sueldos))
 
